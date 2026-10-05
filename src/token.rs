@@ -287,7 +287,7 @@ impl<'a> Tokenizer<'a> {
     }
 
     fn is_string_delimiter_start(c: char) -> bool {
-        matches!(c, '`' | '[' | '\'' | '"')
+        matches!(c, '`' | '\'' | '"')
     }
 
     fn is_string_escape_for(start: char, c: char) -> bool {
